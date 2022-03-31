@@ -1,0 +1,315 @@
+@media (max-width: 740px) {
+    :root {
+        --height-nav: 50px;
+        --height-intro: calc(100vh + 100px);
+    }
+    .container-app {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .text-logo {
+        font-size: 3rem;
+    }
+    .hide-on-mobile {
+        display: none;
+    }
+    .header-on-mobile {
+        position: relative;
+    }
+    .btn-bars i{
+       height: 100%;
+       line-height: var(--height-nav);
+       font-size: 4rem;
+       cursor: pointer;
+    }
+    .header-list {
+       top: 0;
+       bottom: 0;
+       right: 0;
+       width: 70%;
+       position: fixed; 
+       background-color: #0c1d39;
+       list-style: none;
+       
+       padding: 40px 0px;
+       transform: translateX(150%);
+       opacity: 0;
+       transition: all 0.3s linear;
+    }
+    .header-mobile-active .header-list {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+    .header-item {
+       text-align: center;
+       padding: 7px 0px;
+    }
+    .header-link {
+       font-size: 2.5rem;
+       font-weight: bold;
+       color: #fff;
+       text-decoration: none;
+    }
+    .header-item.nav-active .header-link,
+    .header-link:hover {
+            color: #9014fd;
+        
+    }
+    .btn-close {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        cursor: pointer;
+    }
+    .btn-close i {
+        font-size: 3.5rem;
+    }
+    .header-mobile-active .overplay {
+        opacity: 1;
+        transform: translate(0);
+
+    }
+    .overplay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 0;
+        transform: translate(-100%);
+        transition: all 0.2s linear;
+        background-color: rgba(0, 0, 0,0.5);
+    }
+    /* slogan */
+    .slogan {
+        left: 100px;
+        right: 100px;
+        bottom: 380px;
+    }
+    .stament h1 {
+        font-size: 4rem !important;
+    }
+    .writer h1 {
+        font-size: 2rem !important;
+    }
+    .info-details {
+        bottom: 180px;
+        right: 30px;
+        left: 30px;
+        flex-direction: column;
+    }
+    .location {
+        height: 40px;
+        width: 300px;
+    }
+    .location .months{
+        line-height: 4rem;
+    }
+    .location .adress{
+        /* padding: 5px 10px; */
+        line-height: 4rem;
+        flex: 0 0 50%;
+    }
+    .info-details .btn-buy {
+        height: 45px;
+        line-height: 45px;
+        width: 50%;
+        margin-top: 30px;
+        text-align: center;
+        padding: 0;
+    }
+    /* speaker */
+    .wrapper-speakers {
+        height: 2800px;
+        background-color: rgb(12, 29, 57);
+    }
+    .speakers {
+        width: 100%;
+    }
+    .title-speakers {
+        flex-direction: column;
+        align-items: unset;
+        padding: 20px 50px;
+        background-color: #c7cfcd;
+    }
+    .name-title {
+        font-size: 4rem;
+        margin-bottom: 10px;
+    }
+    .speakers-talk {
+        width: 100%;
+    }
+    .desc-title.hide-on-mobile {
+        display: none;
+    }
+    .desc-title {
+        margin: 5px 0px;
+    }
+    .rotato {
+        transform: rotate(0);
+        width: unset;
+    }
+    .speaker, .speaker:nth-child(even) {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+    .speaker-img img {
+        height: 300px;
+    }
+    .desc-speaker {
+        font-size: 1.7rem;
+    }
+    .contact-item {
+        height: 35px;
+        line-height: 35px;
+    }
+    .name-speaker {
+        text-align: center;
+    }
+    .desc-title,
+    .contact-list {
+        justify-content: center;
+    }
+    .company-speaker {
+        text-align: center;
+    }
+    /* agenda */
+    .agenda {
+        height: 978px;
+        z-index: 100;
+    }
+    .wrapper-agenda {
+        width: 100%;
+    }
+    .agenda-item {
+        font-size: 2rem;
+    }
+    .title-ageda {
+        padding-top: 0px;
+        padding-left: 30px;
+    }
+    .number-participate {
+        width: 100%;
+        padding: 50px 10px;
+    }
+    .participate {
+        margin-right: 10px;
+    }
+    .happen:nth-child(2) {
+        padding: 0px 5px;
+    }
+    .happen {
+        align-items: center;
+        justify-content: center;
+    }
+    .number {
+        font-size: 2.1rem;
+    }
+    .note {
+        font-size: 1.8rem;
+    }
+    .number-participate {
+        flex-direction: column;
+        height: unset;
+        justify-content: center;
+        align-items: center;
+    }
+    .number-participate .btn-buy {
+        height: 50px;
+        line-height: 50px;
+        padding: 0 40px;
+        flex: 1;
+        margin-left: 30px;
+        color: #fff;
+        font-size: 1.4rem;
+    }
+    /* venue */
+    .venue-img {
+        width: 30%;
+    }
+    .venue-item {
+        width: 70%;
+        padding: 0px 50px;
+    }
+
+    /* sponsor */
+    .sponsor-item {
+        padding: 30px;
+    }
+    .sponsor-item {
+        width: 100%;
+    }
+    .title-name-sponsor {
+        font-size: 3rem;
+    }
+    .title-date.date-sponsor {
+        font-size: 1.5rem;
+    }
+    .contacts {
+        width: 100%;
+    }
+    .contack-link {
+        font-size: 1.7rem;
+    }
+    /* submit email */
+    .submit-items {
+        width: 100%;
+        padding: 50px 20px;
+    }
+    .submit-name {
+        font-size: 2.6rem;
+    }
+    .submit-desc {
+        font-size: 1.2rem;
+    }
+    .places {
+        flex: 0 0 50%;
+    }
+    .place-more {
+        font-size: 1rem;
+    }
+    .participate {
+        gap: 5px;
+        flex: 0 0 100%;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+    .place-title {
+        font-size: 1.8rem
+    }
+    .btn-buy.submit {
+        height: 50px;
+        line-height: 50px;
+        padding: 0px 15px;
+        font-size: 1.6rem;
+    }
+    .fill-email input {
+        width: 300px;
+    }
+    .copy-right {
+        height: 40px;
+        line-height: 40px;
+        font-size: 1.6rem;
+    }
+}
+@media (min-width: 1024px) {
+    .hide-on-desktop {
+        display: none;
+    }
+}
+
+@media (max-width: 450px) {
+    .wrapper-speakers {
+        height: 2900px;
+        background-color: rgb(12, 29, 57);
+    }
+}
+
+/* @media (max-width: 350px) {
+    .wrapper-speakers {
+        height: 3000px;
+        background-color: rgb(12, 29, 57);
+    }
+    
+} */
